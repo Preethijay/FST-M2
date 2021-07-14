@@ -17,7 +17,7 @@ public class GetSSHkey {
 	
 	//Declare SSH key
 	 ResponseSpecification responseSpec;
-	String sshkey="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC/7+KDVl6SIQDucrO+E4MEbpbsQ5wEiIMmeZ9GZjC38yxx2kZBPkB8eib/tYizKGeDcW9DZOXsngNmqFWyCkM5/xoKaxz+66npDPBDAi0W2m3422SSg5OQrYdEHk1vSqGf0C54v+L3jAg/6DG4TldDiR1t2Zf60cDeaYtHwBJzEghPoDK0XJqih8TcuwIm8R9y3/3HOBye4878/aN9Sy+ctfOs8nAjbzJ2DgMmnX5GWY+7KJEqso9wgNTGHM7FkO2l3KzjXwm2SZGm7UYCa7kIPhozr3sceQllZ9atfm+bJiPRpBHKnUGTX9dGnu3ciwv0pPcIu8Ba9NaLAZjfBd0N";
+	String sshkey="ssh-rsa SSHKEY";
 	int sshid;
 	
 	@BeforeClass
@@ -25,7 +25,7 @@ public class GetSSHkey {
 		 // Create request specification
         requestSpec = new RequestSpecBuilder()
                 .setContentType(ContentType.JSON)
-                .addHeader("Authorization", "token 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")
+                .addHeader("Authorization", "token XXX")
                 .setBaseUri("https://api.github.com")
                 .build();
 		
